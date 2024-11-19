@@ -1,0 +1,51 @@
+.header-container{
+    height: 50px;
+    width: 100%;
+    box-shadow: 0 2px 5px #EDEDED;
+    margin-bottom: 50px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo-container{
+        font-family: "Edu AU VIC WA NT Pre", cursive;
+        font-weight: bold;
+        font-size: 20px;
+        color: #001529;
+        background-color: rgb(209, 209, 240);
+        padding: 0 20px;
+        box-shadow: 0 0 1px blue;
+        border-radius: 5px;
+    }
+
+    .navigation-container{
+        ul{
+            margin: 0;
+            display: flex;
+            list-style: none;
+            
+            li{
+                padding: 0 20px;
+                border-right: 1px solid #001529;
+                cursor: pointer;
+                
+                a{
+                    color: inherit;
+                }
+
+                &:last-child{
+                    border: 0;
+                }
+                &:hover{
+                    color: #0059ad;
+                    text-shadow: 0 0 1px #EDEDED;
+                }
+            }
+
+            .selected-nav-item{
+                color: blue;
+            }
+        }
+    }
+}

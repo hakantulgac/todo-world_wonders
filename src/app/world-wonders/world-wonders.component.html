@@ -1,0 +1,28 @@
+<div class="table-container">
+    <nz-table #basicTable [nzData]="wwData||[]" [nzPageSize]="30">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Summary</th>
+            <th>Location</th>
+            <th class="year-column">Build Year</th>
+            <th>Time Period</th>
+            <th>Image</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let data of basicTable.data">
+            <td>
+                <a [href]="data.links.britannica">{{data.name}}</a>
+            </td>
+            <td>{{data.summary}}</td>
+            <td>{{data.location}}</td>
+            <td>{{data.build_year < 0 ? (-1 * data.build_year) +" BC" : " AD "+data.build_year}}</td>
+            <td>{{data.time_period}}</td>
+            <td>
+                <img class="item-image" [src]="data.links.images[0]" alt="">
+            </td>
+          </tr>
+        </tbody>
+    </nz-table>
+</div>

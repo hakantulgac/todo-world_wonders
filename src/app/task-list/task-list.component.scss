@@ -1,0 +1,27 @@
+nz-table{
+    width: 50%;
+    margin: 0 auto;
+
+    tbody{
+        tr{
+            td{
+                button{
+                    margin: 0 5px;
+                }
+            }
+        }
+    }
+}
+
+.input-container{
+    width: 50%;
+    margin: 30px auto;
+}
+
+.is-done{
+    text-decoration: line-through;
+}
+
+.double-item{
+    background-color: #EDEDED;
+}

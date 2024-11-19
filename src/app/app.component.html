@@ -1,0 +1,20 @@
+<header>
+    <div class="header-container">
+        <div class="logo-container">
+            logo
+        </div>
+        <div class="navigation-container">
+            <ul>
+                <li [class.selected-nav-item]="currentRoute==='/'">
+                    <a [routerLink]="['']">Todo</a>
+                </li>
+                <li [class.selected-nav-item]="currentRoute==='/wonders'">
+                    <a [routerLink]="['wonders']">Wonders</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+<body>
+    <router-outlet></router-outlet>
+</body>
